@@ -31,7 +31,11 @@ body {
   box-shadow: 0 30px 50px -20px #2e0642;
 }
 	#result p{font-size: 60%; }
-	#result>div {float: left;width: 40%;padding: 5%;font-size: 70px}
+	#result>div {float: left;
+    width: 40%;
+    padding: 5%;
+    font-size: 70px;
+    min-height: 180px;}
 	#result div span{
 		float: none;
 		width: 200px
@@ -39,9 +43,17 @@ body {
 	.title {
 		font-size: 20px;
 	}
+	.mbls {
+		    width: 100%;
+    display: block;
+    overflow: hidden;
+    clear: both;
+	}
+	#mbl {display: none}
 @media only screen and (max-width: 800px) { 
 	#result { font-size: 70px;   min-width: 90%;  min-height: 70%}
 	#result div span{  font-size: 33px;}
+	#mbl {display: block;width: 100%;padding: 30px}
 }
 a {color: #fff}
 footer {    position: fixed;
@@ -60,8 +72,9 @@ footer {    position: fixed;
 	<div>
 		<div class="title">Ascii Value</div>
 		<span  class="ascii"></span>
-	</div>
 
+	</div>
+<span class="mbls"><input type="text" id="mbl"></span>
 </div>
 <footer>Fun Project by <a href="http://fb.com/knight3rrant">Knight3rrant</a>| <a href="https://github.com/knight3rrant/Char-to-Ascii/blob/master/index.html">Source Code</a> </footer>
 <script>
